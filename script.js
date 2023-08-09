@@ -36,12 +36,11 @@ function rot13(encodedStr) {
   // Only change code below this line
 	encodedStr=encodedStr.toUpperCase();
 	let i=0;
-	let ans="";
 	for (let ch of encodedStr) {
 		 if(lookup[ch]!=undefined)
-		ans+=lookup[ch];
+		decodedArr+=lookup[ch];
 	}
-  return ans; //return decodedArr
+  return decodedArr; //return decodedArr
 }
 
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
